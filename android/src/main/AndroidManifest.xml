@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.rpsmobile.flutter_sso_plugin">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <application>
+    <service
+        android:name="com.rpsmobile.flutter_sso_plugin.auth.AuthenticatorService"
+        android:exported="true"
+        android:permission="android.permission.BIND_ACCOUNT_AUTHENTICATOR">
+        
+        <intent-filter>
+            <action android:name="android.accounts.AccountAuthenticator" />
+        </intent-filter>
+
+        <meta-data
+            android:name="android.accounts.AccountAuthenticator"
+            android:resource="@xml/authenticator" />
+    </service>
+  </application>
+
+</manifest>
+

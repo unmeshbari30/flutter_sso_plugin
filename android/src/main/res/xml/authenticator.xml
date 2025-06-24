@@ -1,0 +1,6 @@
+<account-authenticator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="com.rpsmobile.sso.account"
+    android:icon="@mipmap/ic_launcher"
+    android:label="FlutterSSO"
+    android:smallIcon="@mipmap/ic_launcher" />
